@@ -43,7 +43,7 @@ public class DBConnection {
 		PreparedStatement ps = null;
 		int insertRe = -1;
 		String insertQuery = "insert into academytbl(no,name,gender,dateOfBirth,age,phone)" + " values(?,?,?,?,?,?)";
-try {
+		try {
 			ps = connection.prepareStatement(insertQuery);
 			ps.setString(1, student.getNo());
 			ps.setString(2, student.getName());
